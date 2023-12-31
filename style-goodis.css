@@ -1,0 +1,172 @@
+
+#title-accueil {
+    margin: 1.5em auto 1em;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 1em 2em;
+}
+
+#header-accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    width: 50%;
+}
+
+#header-accueil span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    font-size: .8em;
+    margin-top: .5em;
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+}
+
+li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 + span {
+    font-family: Pecita, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#view-desktop {
+    display: flex;
+    flex-direction: column;
+}
+
+#view-desktop button {
+    margin: 3em auto;
+}
+
+#img-new {
+    width: 155px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 225px;
+    margin: 1em auto;
+    transition: transform 300ms;
+}
+
+button:hover {
+    background-color: #ed55da;
+    border: 1px solid #ffffff;
+    transform: scale(1.1);
+}
+
+h2 {
+    width: 100%;
+}
+
+.features {
+    width: 100%;
+}
+
+#colors {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(2, 125px);
+    justify-content: center;
+    margin: 0 auto 2.5em;
+    gap: 1.5em;
+}
+
+#colors img {
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+#opinions-goodis {
+    width: 100%;
+}
+
+#opinions-goodis h2 {
+    width: 60%;
+}
+
+.customer-opinion {
+    min-width: 225px;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    section {
+        width: 80%;
+    }
+
+    #title-accueil {
+        margin: 1.5em auto 1em;
+    }
+
+    #header-accueil span {
+        width: 100%;
+    }
+
+    #view-desktop {
+        flex-direction: row;
+        gap: 20em;
+    }
+
+    h1 + span {
+        font-size: 1.2em;
+        
+    }
+    
+    #view-desktop button {
+        margin: 1em auto;
+    }
+
+    #colors {
+        grid-template-rows: repeat(2, 225px);
+        grid-template-columns: repeat(5, 150px);
+    }
+
+    #colors img {
+        width: 50px;
+        margin: 2.5em auto 1em;
+        gap: 1.5em;
+    }
+    
+    .features {
+        width: 200px;
+    }
+
+    .opinions {
+        width: 80%;
+        margin: auto;
+    }
+}
